@@ -1,0 +1,14 @@
+{
+  "name": "lumi-travel",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Website Lumi Travel — tour Trung Quốc, kèm trang quản trị",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "build:static": "node scripts/build-static.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

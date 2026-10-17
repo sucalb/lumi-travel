@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <base href="/" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Không tìm thấy trang — Lumi Travel</title>
+  <meta name="description" content="Trang không tồn tại." />
+  <meta name="theme-color" content="#0a2470" />
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800;900&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script>try{if(sessionStorage.getItem('ts-pt')==='1')document.documentElement.classList.add('pt-in')}catch(e){}</script>
+</head>
+<body class="page-404">
+  <div class="pt" aria-hidden="true"><i class="pt__layer"></i><i class="pt__layer"></i><div class="pt__brand">LUMI <span>TRAVEL</span></div><svg class="pt__plane" viewBox="0 0 64 64"><path d="M60 28 40 26 24 4h-6l8 22-14-1-6-7H1l4 14-4 14h5l6-7 14-1-8 22h6l16-22 20-2a4 4 0 0 0 0-8z"/></svg></div>
+  <div class="progress" aria-hidden="true"><i></i><svg class="progress__plane" viewBox="0 0 24 24"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z"/></svg></div>
+  <header id="siteHeader" class="header header--solid is-scrolled"></header>
+  <main id="top">
+    <section class="notfound">
+      <svg class="notfound__plane" viewBox="0 0 64 64"><path d="M60 28 40 26 24 4h-6l8 22-14-1-6-7H1l4 14-4 14h5l6-7 14-1-8 22h6l16-22 20-2a4 4 0 0 0 0-8z"/></svg>
+      <h1>404</h1><p>Ôi! Chuyến bay này đã đổi hướng. Trang bạn tìm không tồn tại.</p>
+      <a href="./" class="btn btn--gold" data-magnetic>Về trang chủ</a>
+    </section>
+  </main>
+  <footer class="footer" id="siteFooter"></footer>
+  <div class="fabs" id="fab"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Flip.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/common.js"></script>
+  <script>TS.api('api/site').then(d=>TS.boot(d.settings,{solid:true})).catch(()=>{});gsap.to('.notfound__plane',{x:40,y:-20,rotate:-8,duration:2,yoyo:true,repeat:-1,ease:'sine.inOut'})</script>
+</body>
+</html>

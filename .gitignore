@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.DS_Store
+.claude/
+# Dữ liệu thật (đơn đặt tour, mật khẩu admin) — không đưa lên GitHub
+data/db.json
+data/*.tmp
+public/uploads/*
+!public/uploads/.gitkeep

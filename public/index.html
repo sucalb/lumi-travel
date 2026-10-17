@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <base href="/" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lumi Travel — Chuyên tour Trung Quốc trọn gói, visa nhanh, giá tốt</title>
+  <meta name="description" content="Lumi Travel chuyên tour du lịch Trung Quốc: Trương Gia Giới, Phượng Hoàng Cổ Trấn, Bắc Kinh, Thượng Hải, Lệ Giang, Cửu Trại Câu." />
+  <meta name="theme-color" content="#0a2470" />
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800;900&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script>try{if(sessionStorage.getItem('ts-pt')==='1')document.documentElement.classList.add('pt-in')}catch(e){}</script>
+</head>
+<body class="page-home">
+
+  <!-- Preloader (lần đầu vào trang) -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader__inner">
+      <svg class="preloader__logo" viewBox="0 0 120 120">
+        <circle class="pl-ring" cx="60" cy="60" r="52" />
+        <path class="pl-fin" d="M22 80 L46 50 L58 64 L72 52 L98 80 Z" />
+        <path class="pl-wave" d="M30 86 C48 76 70 74 94 80" />
+      </svg>
+      <div class="preloader__brand">LUMI <span>TRAVEL</span></div>
+      <div class="preloader__count"><span id="plCount">0</span>%</div>
+      <div class="preloader__bar"><i id="plBar"></i></div>
+    </div>
+    <div class="preloader__curtain"></div>
+  </div>
+
+  <div class="pt" aria-hidden="true"><i class="pt__layer"></i><i class="pt__layer"></i><div class="pt__brand">LUMI <span>TRAVEL</span></div><svg class="pt__plane" viewBox="0 0 64 64"><path d="M60 28 40 26 24 4h-6l8 22-14-1-6-7H1l4 14-4 14h5l6-7 14-1-8 22h6l16-22 20-2a4 4 0 0 0 0-8z"/></svg></div>
+  <div class="progress" aria-hidden="true"><i></i><svg class="progress__plane" viewBox="0 0 24 24"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z"/></svg></div>
+  <header id="siteHeader" class="header"></header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero__slides" id="heroSlides"></div>
+      <div class="hero__shade"></div>
+      <div class="clouds" aria-hidden="true"><span class="cloud c1"></span><span class="cloud c2"></span><span class="cloud c3"></span><span class="cloud c4"></span></div>
+      <svg class="hero__flight" viewBox="0 0 1440 800" preserveAspectRatio="none" aria-hidden="true"><path id="flightPath" d="M-80 640 C 240 520, 420 700, 720 470 S 1180 160, 1540 120" /></svg>
+      <svg class="hero__plane" viewBox="0 0 64 64" aria-hidden="true"><path d="M60 28 40 26 24 4h-6l8 22-14-1-6-7H1l4 14-4 14h5l6-7 14-1-8 22h6l16-22 20-2a4 4 0 0 0 0-8z"/></svg>
+      <div class="lantern l1" aria-hidden="true"><i></i><b>福</b></div>
+      <div class="lantern l2" aria-hidden="true"><i></i><b>旅</b></div>
+      <div class="lantern l3" aria-hidden="true"><i></i></div>
+
+      <div class="hero__content">
+        <p class="hero__kicker"><span class="dot"></span> Chuyên tour Trung Quốc trọn gói</p>
+        <h1 class="hero__title" id="heroTitle">Bạn đang muốn <em class="script">đi đâu?</em></h1>
+        <p class="hero__sub" id="heroSub"></p>
+
+        <form class="search" id="search" action="tours">
+          <label class="search__field">
+            <small>Điểm đến</small>
+            <select name="dest" id="searchDest"><option value="">Tất cả điểm đến</option></select>
+          </label>
+          <label class="search__field">
+            <small>Khởi hành từ</small>
+            <select name="from" id="searchFrom"><option value="">Mọi nơi</option></select>
+          </label>
+          <label class="search__field">
+            <small>Từ khóa</small>
+            <input name="q" placeholder="VD: Phượng Hoàng, 5N4Đ…" />
+          </label>
+          <button class="btn btn--gold search__btn" data-magnetic><svg viewBox="0 0 24 24"><path d="M10 2a8 8 0 0 1 6.32 12.9l5.39 5.4-1.41 1.4-5.4-5.39A8 8 0 1 1 10 2zm0 2a6 6 0 1 0 0 12 6 6 0 0 0 0-12z"/></svg>Tìm tour</button>
+        </form>
+        <div class="hero__chips" id="heroChips"></div>
+      </div>
+
+      <div class="hero__meta"><div class="hero__dots" id="heroDots"></div></div>
+      <a href="#usp" class="scroll-cue" aria-label="Cuộn xuống"><span></span></a>
+    </section>
+
+    <!-- USP -->
+    <section class="usp" id="usp">
+      <div class="container usp__grid">
+        <div class="usp__item tilt"><span class="usp__icon"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="17"/><path d="M24 14v20M29 18h-7a4 4 0 0 0 0 8h4a4 4 0 0 1 0 8h-8"/></svg></span><div><h3>Đảm bảo giá tốt</h3><p>Giá trọn gói minh bạch, nhiều chương trình ưu đãi hấp dẫn mỗi tuần.</p></div></div>
+        <div class="usp__item tilt"><span class="usp__icon"><svg viewBox="0 0 48 48"><rect x="12" y="6" width="24" height="36" rx="3"/><circle cx="24" cy="21" r="6"/><path d="M18 33h12"/></svg></span><div><h3>Visa Trung Quốc nhanh</h3><p>Visa đoàn chỉ cần ảnh hộ chiếu, giấy thông hành đường bộ trong 3 ngày.</p></div></div>
+        <div class="usp__item tilt"><span class="usp__icon"><svg viewBox="0 0 48 48"><path d="M24 6 8 12v12c0 10 7 16 16 18 9-2 16-8 16-18V12z"/><path d="m17 24 5 5 9-10"/></svg></span><div><h3>Đảm bảo chất lượng</h3><p>Khách sạn 4 sao, HDV tiếng Việt suốt tuyến, hỗ trợ 24/7.</p></div></div>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true"><div class="marquee__track" id="marquee"></div></div>
+
+    <!-- DESTINATIONS -->
+    <section class="dest section" id="destinations">
+      <div class="container">
+        <div class="section-head section-head--row">
+          <div>
+            <p class="eyebrow" data-reveal>Điểm đến hàng đầu</p>
+            <h2 class="section-title" data-reveal-words>Khám phá <em class="script">Trung Hoa</em> & hơn thế nữa</h2>
+          </div>
+          <div class="tabs" id="destTabs" role="tablist">
+            <button class="tab is-active" data-region="china">Trung Quốc</button>
+            <button class="tab" data-region="asia">Châu Á</button>
+            <button class="tab" data-region="domestic">Trong nước</button>
+            <span class="tabs__pill"></span>
+          </div>
+        </div>
+      </div>
+      <div class="dest__rail" id="destRail" data-cursor="Kéo"></div>
+      <div class="container dest__ctrl">
+        <button class="round-btn" id="destPrev" aria-label="Trước">←</button>
+        <div class="dest__bar"><i id="destBar"></i></div>
+        <button class="round-btn" id="destNext" aria-label="Sau">→</button>
+      </div>
+    </section>
+
+    <!-- FEATURED CHINA (horizontal pin) -->
+    <section class="hot" id="hot">
+      <div class="hot__head container">
+        <div>
+          <p class="eyebrow eyebrow--light" data-reveal>Tour Trung Quốc nổi bật</p>
+          <h2 class="section-title section-title--light" data-reveal-words>Hành trình <em class="script">đang hot</em></h2>
+        </div>
+        <a href="tours?cat=china" class="link-arrow link-arrow--light" data-magnetic>Xem tất cả tour Trung Quốc <span>→</span></a>
+      </div>
+      <div class="hot__viewport"><div class="hot__track" id="hotTrack"></div></div>
+      <div class="hot__hint container"><span class="hint-line"><i></i></span> Cuộn để khám phá thêm</div>
+    </section>
+
+    <!-- POPULAR GRID -->
+    <section class="popular section" id="tours">
+      <div class="container">
+        <div class="section-head section-head--row">
+          <div>
+            <p class="eyebrow" data-reveal>Những tour được yêu thích</p>
+            <h2 class="section-title" data-reveal-words>Đặt nhiều nhất <em class="script">tháng này</em></h2>
+          </div>
+          <div class="tabs" id="fromTabs"><button class="tab is-active" data-from="">Tất cả</button><span class="tabs__pill"></span></div>
+        </div>
+        <div class="grid-tours" id="popularGrid"></div>
+        <div class="center"><a href="tours" class="btn btn--outline" data-magnetic>Xem tất cả tour <span>→</span></a></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about section" id="about">
+      <div class="container about__grid">
+        <div class="about__head">
+          <p class="eyebrow" data-reveal>Về Lumi Travel</p>
+          <h2 class="section-title" data-reveal-words>Tỏa sáng mọi hành trình, <em class="script">tận tâm</em> như người nhà</h2>
+        </div>
+        <div class="about__text">
+          <p data-reveal id="aboutText"></p>
+          <div class="stats" id="stats"></div>
+        </div>
+        <div class="about__media">
+          <div class="about__frame"><img src="https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=2000&q=75&auto=format&fit=crop" alt="Vạn Lý Trường Thành mùa thu" loading="lazy" /></div>
+          <div class="about__badge float"><b><span class="counter" data-to="98">0</span>%</b><small>Visa đậu<br/>ngay lần đầu</small></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VISA -->
+    <section class="visa section" id="visa">
+      <div class="visa__bg" aria-hidden="true"><div class="globe"><i></i><i></i><i></i><i></i></div></div>
+      <div class="container visa__grid">
+        <div>
+          <p class="eyebrow eyebrow--light" data-reveal>Dịch vụ Visa</p>
+          <h2 class="section-title section-title--light" data-reveal-words>Visa Trung Quốc <em class="script">nhanh gọn</em></h2>
+          <p class="visa__lead" data-reveal id="visaText"></p>
+          <a href="#contact" class="btn btn--gold" data-reveal data-magnetic>Tư vấn visa miễn phí</a>
+        </div>
+        <div class="visa__main">
+          <div class="visa-big"><span class="flag">🇨🇳</span><div><b>Visa đoàn</b><small>Chỉ cần ảnh hộ chiếu · 5–7 ngày</small></div></div>
+          <div class="visa-big"><span class="flag">🛂</span><div><b>Giấy thông hành</b><small>Đường bộ Lào Cai, Lạng Sơn · 3 ngày</small></div></div>
+          <div class="visa-big"><span class="flag">📄</span><div><b>Visa cá nhân</b><small>Du lịch, công tác, thăm thân · 7 ngày</small></div></div>
+          <div class="visa__cards">
+            <div class="visa-card"><span class="flag">🇭🇰</span><b>Hồng Kông</b></div>
+            <div class="visa-card"><span class="flag">🇹🇼</span><b>Đài Loan</b></div>
+            <div class="visa-card"><span class="flag">🇯🇵</span><b>Nhật Bản</b></div>
+            <div class="visa-card"><span class="flag">🇰🇷</span><b>Hàn Quốc</b></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JOURNEY -->
+    <section class="journey" id="journey">
+      <div class="journey__pin">
+        <div class="container section-head">
+          <p class="eyebrow" data-reveal>Quy trình đặt tour</p>
+          <h2 class="section-title" data-reveal-words>4 bước để <em class="script">cất cánh</em></h2>
+        </div>
+        <div class="journey__stage">
+          <svg class="journey__svg" viewBox="0 0 1200 420" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+            <path id="journeyBase" class="journey__base" d="M40 330 C 200 330, 220 120, 380 140 S 560 330, 720 300 S 900 80, 1160 90" />
+            <path id="journeyLine" class="journey__line" d="M40 330 C 200 330, 220 120, 380 140 S 560 330, 720 300 S 900 80, 1160 90" />
+            <g id="journeyPlane" class="journey__plane"><path d="M22 10 14 9 8 1H6l3 8-5 0-2-3H0l1 5-1 5h2l2-3 5 0-3 8h2l6-8 8-1a1.5 1.5 0 0 0 0-3z" transform="translate(-11 -11)"/></g>
+          </svg>
+          <div class="journey__steps">
+            <div class="step" style="--x:3%;--y:79%"><span class="step__no">01</span><b>Tư vấn</b><small>Gọi hotline hoặc để lại thông tin, chuyên viên liên hệ trong 15 phút.</small></div>
+            <div class="step" style="--x:31%;--y:33%"><span class="step__no">02</span><b>Chọn tour</b><small>Chọn lịch khởi hành phù hợp, giữ chỗ bây giờ - thanh toán sau.</small></div>
+            <div class="step" style="--x:60%;--y:71%"><span class="step__no">03</span><b>Visa &amp; giấy tờ</b><small>Lumi Travel lo trọn visa, vé máy bay, khách sạn, bảo hiểm.</small></div>
+            <div class="step" style="--x:88%;--y:21%"><span class="step__no">04</span><b>Khởi hành</b><small>HDV tiếng Việt đồng hành, hỗ trợ 24/7 suốt chuyến đi.</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG -->
+    <section class="blog section" id="blog">
+      <div class="container">
+        <div class="section-head section-head--row">
+          <div>
+            <p class="eyebrow" data-reveal>Cảm hứng du lịch</p>
+            <h2 class="section-title" data-reveal-words>Cẩm nang <em class="script">Trung Quốc</em></h2>
+          </div>
+        </div>
+        <div class="blog__grid" id="blogGrid"></div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="reviews section" id="reviews">
+      <div class="container section-head">
+        <p class="eyebrow" data-reveal>Khách hàng nói về Lumi Travel</p>
+        <h2 class="section-title" data-reveal-words>Những chuyến đi <em class="script">đáng nhớ</em></h2>
+      </div>
+      <div class="reviews__rows"><div class="reviews__row" data-dir="1"></div><div class="reviews__row" data-dir="-1"></div></div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="contact__waves" aria-hidden="true">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none"><path class="wave w1" d="M0 60 Q 180 10 360 60 T 720 60 T 1080 60 T 1440 60 T 1800 60 T 2160 60 T 2520 60 T 2880 60 V120 H0z"/><path class="wave w2" d="M0 70 Q 180 30 360 70 T 720 70 T 1080 70 T 1440 70 T 1800 70 T 2160 70 T 2520 70 T 2880 70 V120 H0z"/></svg>
+      </div>
+      <div class="container contact__grid">
+        <div class="contact__info">
+          <p class="eyebrow eyebrow--light" data-reveal>Sẵn sàng lên đường?</p>
+          <h2 class="section-title section-title--light" data-reveal-words>Để Lumi Travel lo <em class="script">trọn vẹn</em> hành trình của bạn</h2>
+          <a href="#" class="hotline" id="hotline" data-magnetic></a>
+          <ul class="addr" id="addrList"></ul>
+        </div>
+        <form class="form" id="contactForm" novalidate>
+          <h3>Nhận tư vấn miễn phí</h3>
+          <p>Để lại thông tin, chúng tôi gọi lại trong 15 phút.</p>
+          <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <label class="field"><input type="text" name="name" required placeholder=" " /><span>Họ và tên</span></label>
+          <label class="field"><input type="tel" name="phone" required placeholder=" " /><span>Số điện thoại</span></label>
+          <label class="field"><select name="tourTitle" id="formTour"><option value="">Tour quan tâm (không bắt buộc)</option></select></label>
+          <label class="field"><textarea name="note" rows="3" placeholder=" "></textarea><span>Ghi chú (số người, thời gian…)</span></label>
+          <button type="submit" class="btn btn--gold btn--block" data-magnetic><span class="btn__text">Gửi yêu cầu</span><svg class="btn__plane" viewBox="0 0 24 24"><path d="M2 21 23 12 2 3v7l15 2-15 2z"/></svg></button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="siteFooter"></footer>
+  <div class="fabs" id="fab"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/MotionPathPlugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>
